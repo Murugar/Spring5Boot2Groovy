@@ -4,7 +4,7 @@ buildscript {
         maven { url "https://repo.spring.io/milestone" }
     }
     dependencies {
-        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.0.3.RELEASE'
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:2.5.4'
     }
 }
 
@@ -30,7 +30,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.5.0-beta-1'
+    compile 'org.codehaus.groovy:groovy-all:2.5.0'
     compile 'org.springframework.boot:spring-boot-starter-web'
     testCompile 'junit:junit'
 }
@@ -42,6 +42,3 @@ bootJar {
 }
 
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '4.3'
-}
